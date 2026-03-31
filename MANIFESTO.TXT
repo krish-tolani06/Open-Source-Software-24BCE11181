@@ -1,0 +1,10 @@
+----------------------------------------
+ Open Source Manifesto
+----------------------------------------
+Date: 31 March 2026
+
+I believe in the power of open source.
+Using tools like git, I have experienced how collaboration can improve technology.
+For me, freedom means open source, and it is an important part of software development.
+In the future, I would like to build wifi intrusion detection system and share it with others without restrictions.
+I support the idea of open knowledge and community-driven innovation.
