@@ -1,18 +1,30 @@
 #!/bin/bash
 # Script 1: System Identity Report
 # Author: Krish Tolani | Course: Open Source Software
+
 # --- Variables ---
-STUDENT_NAME="krish" 
+STUDENT_NAME="Krish Tolani"
 SOFTWARE_CHOICE="Git"
-# --- System info ---
+
+# --- System Information ---
 KERNEL=$(uname -r)
 USER_NAME=$(whoami)
 UPTIME=$(uptime -p)
-# --- Display ---
-echo "================================"
+DATE=$(date)
+
+# Get Linux Distribution Name
+DISTRO=$(cat /etc/os-release | grep PRETTY_NAME | cut -d '"' -f2)
+
+# --- Display Output ---
+echo "======================================="
 echo " Open Source Audit — $STUDENT_NAME"
-echo "================================"
-echo "Kernel : $KERNEL"
-echo "User : $USER_NAME"
-echo "Uptime : $UPTIME"
-# TODO: Add distro name, date, and license message
+echo "======================================="
+echo "Software Chosen : $SOFTWARE_CHOICE"
+echo "Distribution    : $DISTRO"
+echo "Kernel Version  : $KERNEL"
+echo "User            : $USER_NAME"
+echo "Uptime          : $UPTIME"
+echo "Date & Time     : $DATE"
+echo ""
+echo "License Info    : Linux is typically licensed under GPL (General Public License)"
+echo "======================================="
